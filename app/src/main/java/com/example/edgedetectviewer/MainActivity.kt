@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
             // get sensor orientation (0/90/180/270)
             sensorOrientationDegrees = characteristics.get(CameraCharacteristics.SENSOR_ORIENTATION) ?: 0
 
-            // compute device/display rotation in degrees
+            // compute rotation
             val rotation = windowManager.defaultDisplay.rotation
             val deviceRotationDegrees = when (rotation) {
                 Surface.ROTATION_0 -> 0
