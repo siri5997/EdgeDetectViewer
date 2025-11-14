@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EdgeDetectViewer</string>
+
+    <!-- strings used by activity_main.xml -->
+    <string name="fps_label">FPS: 0</string>
+    <string name="toggle_desc">Toggle</string>
+
+    <!-- optional: other strings you may want -->
+    <string name="action_settings">Settings</string>
+</resources>
