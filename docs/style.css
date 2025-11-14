@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #00e5ff;
+}
+
+#viewer-container {
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid #555;
+}
+
+#frame-view {
+    max-width: 600px;
+    border-radius: 4px;
+}
+
+#info-panel {
+    margin-top: 10px;
+    background: rgba(255,255,255,0.12);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+}
