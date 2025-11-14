@@ -57,20 +57,35 @@ EdgeDetectViewer/
 
 │   ├── src/main/java/...         # MainActivity, renderer, camera code
 
+
 │   ├── src/main/cpp/native-lib.cpp
+
 │   ├── src/main/cpp/opencv/      # (ignored in Git) OpenCV .so
+
 │   ├── src/main/cpp/llvm-libc++/ # (ignored in Git) libc++_shared.so
+
 │   ├── src/main/res/layout/activity_main.xml
+
 │
+
 ├── web-viewer/
+
 │   ├── index.html
+
 │   ├── style.css
+
 │   ├── src/main.ts
+
 │   ├── dist/main.js
+
 │   ├── images/processed_frame.png
+
 │   └── README.md (Web viewer only)
+
 │
+
 ├── README.md (This file)
+
 └── .gitignore
 
 Setup Instructions
@@ -80,8 +95,11 @@ Setup Instructions
 In Android Studio → SDK Manager → SDK Tools:
 
 ✔ NDK (Side by side)
-✔ CMake
+
+✔CMake
+
 ✔ LLDB
+
 ✔ Android SDK Platform 34
 
 2. Add OpenCV + libc++_shared.so
@@ -117,17 +135,29 @@ target_link_libraries(
 Android Frame Flow
 
 Camera2 API
+  
    ↓
+
 ImageReader (YUV_420_888)
+  
    ↓ convert
+
 NV21 ByteArray
+  
    ↓ JNI
+
 native-lib.cpp (C++)
+   
    ↓ OpenCV processing
+
 RGBA int[]
+   
    ↓
+
 GLSurfaceView Renderer
+  
    ↓
+
 Final on-screen frame
 
 JNI Bridge
